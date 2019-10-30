@@ -26,13 +26,60 @@ class Search extends Component {
          });
     };
 
-    
+    handleInputChange = () => {
+        this.setState({
+            query: this.search.value
+        })
+    };
+
+    handleClick = (e) => {
+        e.prevent.default();
+        this.setState({
+            randomNum: Math.floor(Math.random() * 10)
+        })
+    };
 
 
     render() {
-        return(
-            <div>Hi I am search page</div>
-        )
+        const {isLoaded, items, query } = this.state;
+        if(!isLoaded) {
+            return <div>Loading....</div>
+        }
+
+        else {
+
+            return(
+                <div>
+                <form onSubmit={this.handleClick} >
+
+                  <li>Click Home button to go back to home page</li>
+                <input
+                    className="searchInput"
+                    type="number"
+                    placeholder="Search for..."
+                    ref={query => this.search = query}
+                    onChange={this.handleInputChange}
+                />
+                <button className='searchSubmit' type="submit">Search/Random</button>
+                
+                <p>{this.state.query}</p>
+                </form>
+                <ul>
+                  <li>Month: {items.month}</li>
+                  <li>Number: {items.num}</li>
+                  <li>Year: {items.year}</li>
+                  <li>Safe_title: {items.safe_title}</li>
+                  <li>Alt: {items.title}</li>
+                  <img className='searchImage' src={items.img}/>
+                  <li>Title: {items.alt}</li>
+                </ul>
+            </div>
+            )
+
+        }
+
+
+        
     }
 }
 
