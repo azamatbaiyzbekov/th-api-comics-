@@ -51,7 +51,8 @@ class Search extends Component {
             return(
                 <div>
                 <form onSubmit={this.handleClick} >
-
+                  <li>Due to technical issues out search bar is not working properly</li>
+                  <li>Please click to Search/Random button to get random comics</li>
                   <li>Click Home button to go back to home page</li>
                 <input
                     className="searchInput"

@@ -10,14 +10,14 @@ class App extends Component {
     return (
       <>
       <Routes />
-      <div className="App">
-        <button class="btn home">
-          <NavLink className="nav-link" exact to="/home">Home</NavLink>
-        </button>
+        <div className="App">
+          <button class="btn home"><i class="fa fa-home"></i>
+            <NavLink className="nav-link" exact to="/home">Home</NavLink>
+         </button>
 
-        <button class="btn search">
-          <NavLink className="nav-link" exact to="/search">Search</NavLink>
-        </button>
+          <button class="btn search"><i class="fa fa-search"></i>
+            <NavLink className="nav-link" exact to="/search">Search</NavLink>
+          </button>
        
       </div>
       </>

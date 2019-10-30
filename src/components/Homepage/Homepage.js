@@ -67,6 +67,13 @@ class HomePage extends Component {
 
         return (
             <>
+            <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                  <a href="#" class="brand-logo center">Your Favorite Comics</a>
+                </div>
+            </div>
+            </nav>
             <div className="instructions">
                 <h1>Welcome User!</h1>
                     <li>Check out our lates comics by clicking the "Latest Comics" button</li>
