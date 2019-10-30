@@ -1,0 +1,14 @@
+.App {
+    text-align: left;
+   
+  }
+  
+.nav-link {
+    height:34px;
+    margin:0 auto;
+    margin-right:10px;
+    float: left;
+    display: block;
+    color: white
+    
+}

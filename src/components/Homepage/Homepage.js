@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Homepage.css'
+
 class HomePage extends Component {
     state = {
         items: [],
