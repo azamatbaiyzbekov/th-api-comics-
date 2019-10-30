@@ -10,6 +10,8 @@ class HomePage extends Component {
     };
     
     componentDidMount() {
+    {/* Using fetch to retrieve data from and external API */}
+    {/* I could have used axios by importing it, but decide to try fetch instead. I used fetch only once before */}
         const url = `https://xkcd.now.sh/?comic=latest`
         fetch(url, {
             headers: {
@@ -27,6 +29,7 @@ class HomePage extends Component {
     };
     
     toggleComicsHandler = () => {
+        {/* This function lets us to hide and unhide the latest comics on click */}
         const doesShow = this.state.showLatestComics;
         this.setState({showLatestComics: !doesShow})
     };

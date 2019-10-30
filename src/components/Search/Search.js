@@ -9,6 +9,7 @@ class Search extends Component {
     };
     
     componentDidMount() {
+    {/* retrieving data once again and instead of lates I am passing random num function */}
         const num = Math.floor(Math.random() * 2221)
         const url = `https://xkcd.now.sh/?comic=${num}`
         fetch(url, {
@@ -27,6 +28,7 @@ class Search extends Component {
     };
 
     handleInputChange = () => {
+    {/* function grabs value within the input field */}
         this.setState({
             query: this.search.value
         })

@@ -5,6 +5,9 @@ import Routes from './config/routes';
 import { NavLink } from 'react-router-dom';
 
 
+{/* NavLink helps to create links between home and search  */}
+{/* withRouter needs to be wrapped around the app in order for it to work  */}
+
 class App extends Component {
   render() {
     return (
