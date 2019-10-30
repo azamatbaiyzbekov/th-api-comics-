@@ -52,7 +52,7 @@ class HomePage extends Component {
                         <li>Year: {items.year}</li>
                         <li>Safe_title: {items.safe_title}</li>
                         <li>Alt: {items.title}</li>
-                        <img src={items.img} />
+                        <img className="latestImage" src={items.img} />
                         <li>Title: {items.alt}</li>
                     </ul>
                 </div>
