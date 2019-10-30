@@ -7,7 +7,7 @@ class Search extends Component {
         query: Number,
         randomNum: Number,
     };
-
+    
     componentDidMount() {
         const num = Math.floor(Math.random() * 2221)
         const url = `https://xkcd.now.sh/?comic=${num}`
@@ -47,7 +47,7 @@ class Search extends Component {
         }
 
         else {
-
+            
             return(
                 <div>
                 <form onSubmit={this.handleClick} >
@@ -78,9 +78,6 @@ class Search extends Component {
             )
 
         }
-
-
-        
     }
 }
 

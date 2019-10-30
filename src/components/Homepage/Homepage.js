@@ -8,7 +8,7 @@ class HomePage extends Component {
         isLoaded: false,
         showLatestComics: false
     };
-
+    
     componentDidMount() {
         const url = `https://xkcd.now.sh/?comic=latest`
         fetch(url, {
@@ -23,16 +23,16 @@ class HomePage extends Component {
                  isLoaded: true,
                  items: json
              })
-         });
+        });
     };
-
+    
     toggleComicsHandler = () => {
         const doesShow = this.state.showLatestComics;
         this.setState({showLatestComics: !doesShow})
     };
 
     render() {
-
+        
         let comics = null;
 
         const {isLoaded, items} = this.state;
@@ -51,28 +51,19 @@ class HomePage extends Component {
                         <li>Alt: {items.title}</li>
                         <img src={items.img} />
                         <li>Title: {items.alt}</li>
-                    
-                    
                     </ul>
-                
-                
-                
                 </div>
-
-
-
-
             )
         };
-
+        
         return (
             <>
             <nav>
-            <div class="nav-wrapper blue">
-                <div class="container">
-                  <a href="#" class="brand-logo center">Your Favorite Comics</a>
+                <div class="nav-wrapper blue">
+                    <div class="container">
+                        <a href="#" class="brand-logo center">Your Favorite Comics</a>
+                    </div>
                 </div>
-            </div>
             </nav>
             <div className="instructions">
                 <h1>Welcome User!</h1>
@@ -82,9 +73,9 @@ class HomePage extends Component {
             <br></br>
             </div>
             <div className="homePage">
-            <br></br>
-              <button className="latest" onClick={this.toggleComicsHandler}>Lates Comic</button>
-              {comics}
+                <br></br>
+                    <button className="latest" onClick={this.toggleComicsHandler}>Lates Comic</button>
+                    {comics}
             </div>
             </>
         )

@@ -9,8 +9,6 @@ const Routes = () => {
         <Switch>
            <Route path='/search' component={ Search }/> 
            <Route path='/home' component={ HomePage }/> 
-        
-        
         </Switch>
     )
 };
