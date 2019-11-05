@@ -1,8 +1,8 @@
-# Support Engineer Challenge
+#Practice
 
 ## Notes
 
-First of all, I would like to thank you for consideration. This was a great learning experience. 
+--------------------
 
 ## Things I was able to achieve:
 
@@ -14,9 +14,8 @@ First of all, I would like to thank you for consideration. This was a great lear
 
 ## Things I was not able to achieve and mistakes I made
 
-- Unfortunetly, I was not able to filter the data from an external API. I need more practice and keep learning how to filter external API data to the browser.
+-  I need more practice and keep learning how to filter external API data to the browser.
 
-- I guess, I also used not a best way to retrieve data from an API. Meaning, I used two API calls instead of one. 
 
 
 
